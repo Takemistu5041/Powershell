@@ -1,0 +1,17 @@
+hostname
+winver
+Clear-RecycleBin -Confirm:$False
+cleanmgr /verylowdisk
+$PUA = Get-MpPreference
+if ($PUA.puaprotection -ne $true){set-mppreference -puaprotection enabled;write-output ("PUA Disabled ...ÅyFixÅz");}else{write-output ("PUA Enabled...OK!");}
+RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255
+control /name Microsoft.InternetOptions
+cmd /c "desk.cpl,1"
+firewall.cpl
+control /name Microsoft.UserAccounts
+control /name Microsoft.ActionCenter
+control /name Microsoft.CredentialManager
+Get-SmbShare
+#remove-smbshare -name output
+control /name microsoft.folderoptions
+del $env:userprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt

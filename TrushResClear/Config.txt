@@ -1,0 +1,7 @@
+;!@Install@!UTF-8!
+Title="オン資端末側(めいと向け)"
+Directory="C:\\CMS\\TrushResClear"
+InstallPath="C:\\CMS\\TrushResClear"
+BeginPrompt="デスクトップに「連携AP再起動」のショートカットを作成し、\n結果データファイルの消し忘れ判定時間を1日(1440)に設定、\nゴミ箱を空にする処理をタスクに設定します"
+ExecuteFile="Setup_TrushResClear.bat"
+;!@InstallEnd@!

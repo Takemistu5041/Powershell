@@ -1,0 +1,7 @@
+;!@Install@!UTF-8!
+Title="めいと用オン資向け設定"
+Directory="C:\\CMS\\NetUse2_ONS"
+InstallPath="C:\\CMS\\NetUse2_ONS"
+BeginPrompt="NetUse2_ONS(UAC版)を設定します"
+ExecuteFile="Setup_Netuse2_UAC.bat"
+;!@InstallEnd@!

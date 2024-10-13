@@ -1,0 +1,19 @@
+
+IPアドレス　(V4、V6)
+
+        foreach ($NSResult2 in $NSResult) {
+            switch -Regex ($NSResult2){
+                
+                '\w*:\w*:\w*:\w*:\w*:\w*'{
+                    Write-Output $NSResult2
+                    $LookUpResult = $True
+                }
+
+                '\d{1,}\.\d{1,}\.\d{1,}\.\d{1,}'{
+                    Write-Output $NSResult2
+                    $LookUpResult = $True
+                }
+                    
+        }
+
+

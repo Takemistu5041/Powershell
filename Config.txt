@@ -1,0 +1,7 @@
+;!@Install@!UTF-8!
+Title="Program Setup"
+Directory="C:\\ProgramA"
+InstallPath="C:\\ProgramA"
+BeginPrompt="NetUse2を設定します"
+ExecuteFile="Setup.bat"
+;!@InstallEnd@!
